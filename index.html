@@ -12,7 +12,7 @@
 </head>
   <body>
       <!-- Rating state start -->
-      <div class="rating-card">
+      <div class="rating-card card">
         <div class="icon-circle">
         <img class="icon-star" src="/src/assets/icon-star.svg">
         </div>
@@ -22,21 +22,21 @@
         to help us improve our offering!</p>
 
         <div class="button-line">
-          <button class="rating-button">1</button>
-          <button class="rating-button">2</button>
-          <button class="rating-button">3</button>
-          <button class="rating-button">4</button>
-          <button class="rating-button">5</button>
+          <button class="rating-button" id="btn1">1</button>
+          <button class="rating-button" id="btn2">2</button>
+          <button class="rating-button" id="btn3">3</button>
+          <button class="rating-button" id="btn4">4</button>
+          <button class="rating-button" id="btn5">5</button>
         </div>
         <button class="submit-button">SUBMIT</button>
       </div>
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
-      <div class="thanking-card">
+      <div class="thanking-card card is-hidden">
         <img class="thanking-img" src="/src/assets/illustration-thank-you.svg">
         <div class="span-background">
-          <span class="thanking-span">You selected <span class="rating-variable"></span> out of 5</span>
+          <span class="thanking-span">You selected <span class="rating-variable">0</span> out of 5</span>
         </div>
         <h1 class="thanking-title">Thank you!</h1>
         <p class="thanking-content">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
@@ -44,9 +44,10 @@
       <!-- Thank you state end -->
 
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Danny</a>.
+      Challenge by <a class="att" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a class="att" href="#">Danny</a>.
     </div>
+
+    <script type="module" src="./src/main.js"></script>
   </body>
-    <link type="module" src="src/main.js">
 </html>

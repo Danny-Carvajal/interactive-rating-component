@@ -57,8 +57,6 @@ body {
   border-radius: 2rem;
   padding: 2rem;
   gap: 1rem;
-
-  /*display: none*/
 }
 
 /*Star Icon*/
@@ -146,7 +144,6 @@ body {
   }
 }
 
-
 /* =============== */
 /*  Thanking Card  */
 /* =============== */
@@ -162,8 +159,6 @@ body {
   border-radius: 2rem;
   padding: 3rem;
   gap: 1rem;
-
-  display: none; /**/
 }
 
 .thanking-img {
@@ -193,4 +188,24 @@ body {
   color: var(--grey-500);
   font-size: 1.05rem;
   text-align: center;
+}
+
+/* ============= */
+/*    Details    */
+/* ============= */
+
+/*smooth transition*/
+.card {
+  transition: opacity 0.4s ease;
+}
+
+/* "hidden" status */
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.att {
+  color: var(--white);
 }
