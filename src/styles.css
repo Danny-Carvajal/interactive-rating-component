@@ -111,6 +111,19 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0.5rem 0.5rem 1rem 0.5rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+  background-color: var(--white);
+  color: var(--grey-950);
+  transform: scale(1.05);
+  }
+
+  &:focus {
+  background-color: var(--orange-500);
+  color: var(--grey-950);
+  transform: scale(1.05);
+  }
 }
 
 .submit-button {
@@ -124,7 +137,15 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 3rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+  background-color: var(--white);
+  color: var(--grey-950);
+  transform: scale(1.05);
+  }
 }
+
 
 /* =============== */
 /*  Thanking Card  */
@@ -151,6 +172,7 @@ body {
   margin-bottom: 1rem;
 }
 
+/* main content */
 .span-background {
   height: 2rem;
   background-color: var(--grey-750);
@@ -162,6 +184,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
+/* content text */
 .thanking-span {
   color: var(--orange-500);
 }
